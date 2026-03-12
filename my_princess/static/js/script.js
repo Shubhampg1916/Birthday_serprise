@@ -85,7 +85,7 @@ function createHearts() {
     function showImage() {
         console.log("Showing image " + currentImage);
         const img = document.getElementById("memoryImage");
-        img.src = "/static/image/image" + currentImage + ".JPEG" 
+        img.src = "/static/image/image" + currentImage + ".jpeg" 
     }
 
     function next() {
@@ -172,4 +172,5 @@ function fight_look_like(){
     text.innerText = "This is how we look when we fight";
 
 }
+
 
