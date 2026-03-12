@@ -1,0 +1,52 @@
+{% extends 'my_princess/base.html' %}
+
+{% block title %}Happy Birthday!{% endblock %}
+
+{% block content %}
+    <!-- Balloons -->
+    <div class="balloon balloon1"></div>
+    <div class="balloon balloon2"></div>
+    <div class="balloon balloon3"></div>
+    <div class="balloon balloon4"></div>
+    <div class="balloon balloon5"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="greeting">🎉 Happy Birthday! 🎉</div>
+        <div class="greeting"> Dear Princess </div>
+        
+        <div class="emoji">🎂</div>
+
+        <!-- <div class="input-section">
+            <input 
+                type="text" 
+                id="nameInput" 
+                placeholder="Enter your name here..."
+                maxlength="30"
+            >
+        </div> -->
+        <!-- <div id="qubyGif" style="display:none; margin-top:20px;">
+            <div class="tenor-gif-embed"
+                data-postid="10450862751152685702"
+                data-share-method="host"
+                data-aspect-ratio="1"
+                data-width="220px">
+                <a href="https://tenor.com/view/quby-gif-10450862751152685702">Quby Sticker</a>
+            </div>
+        </div>
+
+        <script async src="https://tenor.com/embed.js"></script> -->
+
+        <div class="name-display" id="nameDisplay">✨</div>
+
+        <div class="subtext">Let's celebrate this special day! 🎈</div>
+
+        <button class="button" onclick="celebrate()">Let's Party! 🎊</button>
+        <a href="{% url 'my_princess:memories' %}" class="button">Our Memories!</a>
+        <!-- <a>Why we are together</a> -->
+         <a href="{% url 'my_princess:Check_luck' %}" class="button">Check your luck</a>
+        <a href="{% url 'my_princess:why_i_love_you' %}" class="button">Why i love you!</a>
+        <a href="{% url 'my_princess:final_message' %}" class="button">Final message!</a>
+
+    </div>
+{% endblock %}

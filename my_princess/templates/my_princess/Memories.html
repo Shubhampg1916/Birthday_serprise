@@ -1,0 +1,27 @@
+{% extends 'my_princess/base.html' %}
+{% load static %}
+
+{% block title %}Our memories {% endblock %}
+
+{% block content %}
+    <!-- <script>
+    
+     </script> -->
+    <div class="balloon balloon1"></div>
+    <div class="balloon balloon2"></div>
+    <div class="balloon balloon3"></div>
+    <div class="balloon balloon4"></div>
+    <div class="balloon balloon5"></div>
+    <div class="container">
+        <div class="greeting">🎉 Our Memories! 🎉</div>
+
+        <div class="subtext">We two have special memories! 🎈</div>
+        <div class="image-frame">
+            <img id="memoryImage" src="{% static 'Birthday_images/image1.jpg' %}" alt="Memory 1">
+        </div>
+        <button class="button" onclick="previous()">Previous Memory! 🎊</button>
+
+        <button class="button" onclick="next()">Next Memory! 👉 </button>
+    </div>
+
+{% endblock %}

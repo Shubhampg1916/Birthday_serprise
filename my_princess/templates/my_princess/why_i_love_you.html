@@ -1,0 +1,30 @@
+{% extends 'my_princess/base.html' %}
+{% load static %}
+{% block title %}Happy Birthday!{% endblock %}
+
+{% block content %}
+    <!-- Balloons -->
+    <div class="balloon balloon1"></div>
+    <div class="balloon balloon2"></div>
+    <div class="balloon balloon3"></div>
+    <div class="balloon balloon4"></div>
+    <div class="balloon balloon5"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="image-frame2">
+            <img id="fun_image" src="{% static 'fun_image/image1.jpg' %}" alt="Memory 1">
+        </div>
+        <div class="image-text">
+            <h1 id = "fun_text">Click on below button please</h1>
+        </div>
+
+        <button class="button" onclick="Future_you()">Future You 👩‍💻</button>
+        <button class="button" onclick="we_are_like()">We are like 🌻</button>
+        <button class="button" onclick="we_are_fight()">Why we fight 🎊</button>
+        <button class="button" onclick="fight_look_like()">Fight look like 🔥</button>
+        <button class="button" onclick="Future_we_are()">Our future 👨‍👨‍👧‍👦</button>
+        
+
+    </div>
+{% endblock %}

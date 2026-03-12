@@ -1,0 +1,37 @@
+{% extends 'my_princess/base.html' %}
+{% load static %}
+
+{% block title %}Check Your luck {% endblock %}
+
+{% block content %}
+    <!-- <script>
+    
+     </script> -->
+    <div class="balloon balloon1"></div>
+    <div class="balloon balloon2"></div>
+    <div class="balloon balloon3"></div>
+    <div class="balloon balloon4"></div>
+    <div class="balloon balloon5"></div>
+    <div class="container">
+        <div class="greeting">🤞 Check Your luck! 🤞</div>
+        <div class="her_box">
+            <div class="her_box_inner">
+                <input type="text" id="luckInput" placeholder="Enter your name ">
+                <input type="text" id="luckinput2" placeholder="Enter your age">
+                <input type="text" id="luckInput3" placeholder="Enter your Boyfriend name ">
+                <input type="text" id="luckinput4" placeholder="Enter your Boyfriend age">
+                <button class="button" onclick="checkLuck()">Check Your Luck! 🎊</button>
+                <span class="loader"></span>
+                
+                <div id="luckResult" class="luck-message"></div>
+                
+        </div>
+        </div>
+
+        <!-- <div class="subtext">We two have special memories! 🎈</div>
+        <button class="button" onclick="previous()">Previous Memory! 🎊</button>
+
+        <button class="button" onclick="next()">Next Memory! 👉 </button> -->
+    </div>
+
+{% endblock %}
