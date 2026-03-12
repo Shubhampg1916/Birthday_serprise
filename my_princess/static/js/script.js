@@ -80,12 +80,12 @@ function createHearts() {
     });
 
     let currentImage = 1;
-    const totalImages = 8; // change this to total number of pictures
+    const totalImages = 10; // change this to total number of pictures
 
     function showImage() {
         console.log("Showing image " + currentImage);
         const img = document.getElementById("memoryImage");
-        img.src = "/static/Birthday_images/image" + currentImage + ".JPG" 
+        img.src = "/static/image/image" + currentImage + ".JPEG" 
     }
 
     function next() {
@@ -172,3 +172,4 @@ function fight_look_like(){
     text.innerText = "This is how we look when we fight";
 
 }
+
