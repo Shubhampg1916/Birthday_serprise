@@ -13,7 +13,7 @@ def memories(request):
     """
     View to display the memories page.
     """
-    return render(request, 'my_princess/memories.html')
+    return render(request, 'my_princess/Memories.html')
 
 def Check_luck(request):
     print("Check_luck view called")
@@ -32,3 +32,4 @@ def why_i_love_you(request):
 
 def final_message(request):
     return render(request, 'my_princess/Final_message.html')
+
